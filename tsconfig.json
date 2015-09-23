@@ -1,10 +1,19 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
-        "noEmit": true
-    },
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "noEmit": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "typings/tsd.d.ts",
+    "typings/assertion-error/assertion-error.d.ts",
+    "typings/chai/chai.d.ts",
+    "typings/jasmine/jasmine.d.ts",
+    "typings/node/node.d.ts",
+    "test/personSpec.ts",
+    "src/Person.ts"
+  ]
 }
