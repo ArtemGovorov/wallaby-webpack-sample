@@ -22,7 +22,7 @@
   "devDependencies": {
     "babel": "^4.7.16",
     "chai": "^2.1.2",
-    "wallaby-webpack": "^0.0.3",
+    "wallaby-webpack": "*",
     "webpack": "^1.7.3",
     "ts-loader": "^0.5.5",
     "typescript": "^1.6.2"
