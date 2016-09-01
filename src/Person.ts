@@ -1,5 +1,5 @@
 export default class Person {
-  name: string
+  name: string;
   constructor(name) {
     this.name = name;
   }

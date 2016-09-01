@@ -5,6 +5,7 @@ module.exports = function () {
 
   return {
     files: [
+      { pattern: 'node_modules/chai/chai.js', instrument: false },
       { pattern: 'src/**/*.ts', load: false }
     ],
 
@@ -14,7 +15,8 @@ module.exports = function () {
 
     postprocessor: webpackPostprocessor,
 
-    bootstrap: function () {
+    setup: function () {
+      window.expect = chai.expect;
       window.__moduleBundler.loadTests();
     }
   };
